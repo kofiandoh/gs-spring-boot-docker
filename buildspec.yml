@@ -15,7 +15,7 @@ phases:
   build:
     commands:
       - cd complete
-      - ./mvnw package && java -jar target/gs-spring-boot-docker-0.1.0.jar
+      - ./mvnw package
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t $REPOSITORY_URI:latest .

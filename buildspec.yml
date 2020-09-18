@@ -14,11 +14,14 @@ phases:
       - IMAGE_TAG=${COMMIT_HASH:=latest}
   build:
     commands:
+      - ./mvnw package && java -jar target/gs-spring-boot-docker-0.1.0.jar
       - echo Build started on `date`
       - echo Building the Docker image...
       - cd complete
       - docker build -t $REPOSITORY_URI:latest .
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+     
+      
   post_build:
     commands:
       - echo Build completed on `date`

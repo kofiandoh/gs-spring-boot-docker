@@ -11,7 +11,7 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() {
-		return "I am trying to conteainerize my doceker application";
+		return "The most efficient method to use";
 	}
 
 	public static void main(String[] args) {

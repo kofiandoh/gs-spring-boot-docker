@@ -11,7 +11,7 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() {
-		return "The most efficient method to use";
+		return "Twriting to the test";
 	}
 
 	public static void main(String[] args) {

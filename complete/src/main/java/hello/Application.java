@@ -11,13 +11,10 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() {
-		return "test1";
+		return "Both test environments";
 	}
 	
-	@RequestMapping("/")
-	public String home() {
-		return "test2";
-	}
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);

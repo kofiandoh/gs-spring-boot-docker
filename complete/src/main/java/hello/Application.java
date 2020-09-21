@@ -11,7 +11,12 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() {
-		return "Twriting to the test";
+		return "test1";
+	}
+	
+	@RequestMapping("/")
+	public String home() {
+		return "test2";
 	}
 
 	public static void main(String[] args) {
